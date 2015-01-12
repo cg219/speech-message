@@ -2,136 +2,261 @@
 1 verbose cli [ 'node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'body-parser',
-1 verbose cli   '--save' ]
+1 verbose cli   '-g',
+1 verbose cli   'mocha',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 warn package.json speech-message@1.0.0 No description
-5 warn package.json speech-message@1.0.0 No README data
-6 verbose readDependencies using package.json deps
-7 verbose cache add [ 'body-parser', null ]
-8 verbose cache add name=undefined spec="body-parser" args=["body-parser",null]
-9 verbose parsed url { protocol: null,
-9 verbose parsed url   slashes: null,
-9 verbose parsed url   auth: null,
-9 verbose parsed url   host: null,
-9 verbose parsed url   port: null,
-9 verbose parsed url   hostname: null,
-9 verbose parsed url   hash: null,
-9 verbose parsed url   search: null,
-9 verbose parsed url   query: null,
-9 verbose parsed url   pathname: 'body-parser',
-9 verbose parsed url   path: 'body-parser',
-9 verbose parsed url   href: 'body-parser' }
-10 silly lockFile 14cf125c-body-parser body-parser
-11 verbose lock body-parser /Users/workstation/.npm/14cf125c-body-parser.lock
-12 silly lockFile 14cf125c-body-parser body-parser
-13 silly lockFile 14cf125c-body-parser body-parser
-14 verbose addNamed [ 'body-parser', '' ]
-15 verbose addNamed [ null, '*' ]
-16 silly lockFile 9f665704-body-parser body-parser@
-17 verbose lock body-parser@ /Users/workstation/.npm/9f665704-body-parser.lock
-18 silly addNameRange { name: 'body-parser', range: '*', hasData: false }
-19 verbose request where is /body-parser
-20 verbose request registry https://registry.npmjs.org/
-21 verbose request id 70c7262591b9921a
-22 verbose url raw /body-parser
-23 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
-24 verbose url resolved https://registry.npmjs.org/body-parser
-25 verbose request where is https://registry.npmjs.org/body-parser
-26 info trying registry request attempt 1 at 13:38:44
-27 verbose etag "ETFMT3XUY9E3VLUU2ZU6AZMLC"
-28 http GET https://registry.npmjs.org/body-parser
-29 http 200 https://registry.npmjs.org/body-parser
-30 silly registry.get cb [ 200,
-30 silly registry.get   { date: 'Mon, 12 Jan 2015 18:38:43 GMT',
-30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
-30 silly registry.get     etag: '"38OTRDFQWZ7DS6PTGQDS3W4LO"',
-30 silly registry.get     'content-type': 'application/json',
-30 silly registry.get     'cache-control': 'max-age=60',
-30 silly registry.get     'content-length': '77877',
-30 silly registry.get     'accept-ranges': 'bytes',
-30 silly registry.get     via: '1.1 varnish',
-30 silly registry.get     age: '26',
-30 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
-30 silly registry.get     'x-cache': 'HIT',
-30 silly registry.get     'x-cache-hits': '3',
-30 silly registry.get     'x-timer': 'S1421087923.788776,VS0,VE0',
-30 silly registry.get     vary: 'Accept',
-30 silly registry.get     'keep-alive': 'timeout=10, max=50',
-30 silly registry.get     connection: 'Keep-Alive' } ]
-31 silly addNameRange number 2 { name: 'body-parser', range: '*', hasData: true }
-32 silly addNameRange versions [ 'body-parser',
-32 silly addNameRange   [ '1.0.0',
-32 silly addNameRange     '1.0.1',
-32 silly addNameRange     '1.0.2',
-32 silly addNameRange     '1.1.0',
-32 silly addNameRange     '1.1.1',
-32 silly addNameRange     '1.1.2',
-32 silly addNameRange     '1.2.0',
-32 silly addNameRange     '1.2.1',
-32 silly addNameRange     '1.2.2',
-32 silly addNameRange     '1.3.0',
-32 silly addNameRange     '1.3.1',
-32 silly addNameRange     '1.4.0',
-32 silly addNameRange     '1.4.1',
-32 silly addNameRange     '1.4.2',
-32 silly addNameRange     '1.4.3',
-32 silly addNameRange     '1.5.0',
-32 silly addNameRange     '1.5.1',
-32 silly addNameRange     '1.5.2',
-32 silly addNameRange     '1.6.0',
-32 silly addNameRange     '1.6.1',
-32 silly addNameRange     '1.6.2',
-32 silly addNameRange     '1.6.3',
-32 silly addNameRange     '1.6.4',
-32 silly addNameRange     '1.6.5',
-32 silly addNameRange     '1.6.6',
-32 silly addNameRange     '1.6.7',
-32 silly addNameRange     '1.7.0',
-32 silly addNameRange     '1.8.0',
-32 silly addNameRange     '1.8.1',
-32 silly addNameRange     '1.8.2',
-32 silly addNameRange     '1.8.3',
-32 silly addNameRange     '1.8.4',
-32 silly addNameRange     '1.9.0',
-32 silly addNameRange     '1.9.1',
-32 silly addNameRange     '1.9.2',
-32 silly addNameRange     '1.9.3',
-32 silly addNameRange     '1.10.0',
-32 silly addNameRange     '1.10.1' ] ]
-33 verbose addNamed [ 'body-parser', '1.10.1' ]
-34 verbose addNamed [ '1.10.1', '1.10.1' ]
-35 silly lockFile 0f993b18-body-parser-1-10-1 body-parser@1.10.1
-36 verbose lock body-parser@1.10.1 /Users/workstation/.npm/0f993b18-body-parser-1-10-1.lock
-37 silly lockFile b9af5de0-dy-parser-body-parser-1-10-1-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-38 verbose lock https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz /Users/workstation/.npm/b9af5de0-dy-parser-body-parser-1-10-1-tgz.lock
-39 verbose addRemoteTarball [ 'https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz',
-39 verbose addRemoteTarball   'af0c7156b128d946f3c43f5fe0364da00cfa7391' ]
-40 info retry fetch attempt 1 at 13:38:44
-41 verbose fetch to= /var/folders/y2/7z6ztmld3x91j3yk3gp0dr5r0000gq/T/npm-4467-kFqpQbTY/registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-42 http GET https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-43 http 200 https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-44 silly lockFile b9af5de0-dy-parser-body-parser-1-10-1-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-45 silly lockFile b9af5de0-dy-parser-body-parser-1-10-1-tgz https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz
-46 silly lockFile 0f993b18-body-parser-1-10-1 body-parser@1.10.1
-47 silly lockFile 0f993b18-body-parser-1-10-1 body-parser@1.10.1
-48 silly lockFile 9f665704-body-parser body-parser@
-49 silly lockFile 9f665704-body-parser body-parser@
-50 error Error: EACCES, mkdir '/Users/workstation/.npm/body-parser/1.10.1'
-50 error  { [Error: EACCES, mkdir '/Users/workstation/.npm/body-parser/1.10.1']
-50 error   errno: 3,
-50 error   code: 'EACCES',
-50 error   path: '/Users/workstation/.npm/body-parser/1.10.1',
-50 error   parent: 'speech-message' }
-51 error Please try running this command again as root/Administrator.
-52 error System Darwin 13.3.0
-53 error command "node" "/usr/local/bin/npm" "install" "body-parser" "--save"
-54 error cwd /Users/workstation/Documents/mente/speech-message
-55 error node -v v0.10.33
-56 error npm -v 1.4.28
-57 error path /Users/workstation/.npm/body-parser/1.10.1
-58 error code EACCES
-59 error errno 3
-60 error stack Error: EACCES, mkdir '/Users/workstation/.npm/body-parser/1.10.1'
-61 verbose exit [ 3, true ]
+4 verbose cache add [ 'mocha', null ]
+5 verbose cache add name=undefined spec="mocha" args=["mocha",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'mocha',
+6 verbose parsed url   path: 'mocha',
+6 verbose parsed url   href: 'mocha' }
+7 silly lockFile a619da43-mocha mocha
+8 verbose lock mocha /Users/workstation/.npm/a619da43-mocha.lock
+9 silly lockFile a619da43-mocha mocha
+10 silly lockFile a619da43-mocha mocha
+11 verbose addNamed [ 'mocha', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile b9899f31-mocha mocha@
+14 verbose lock mocha@ /Users/workstation/.npm/b9899f31-mocha.lock
+15 silly addNameRange { name: 'mocha', range: '*', hasData: false }
+16 verbose request where is /mocha
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 2154ad9f0a9641ff
+19 verbose url raw /mocha
+20 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+21 verbose url resolved https://registry.npmjs.org/mocha
+22 verbose request where is https://registry.npmjs.org/mocha
+23 info trying registry request attempt 1 at 17:29:31
+24 http GET https://registry.npmjs.org/mocha
+25 http 200 https://registry.npmjs.org/mocha
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Mon, 12 Jan 2015 22:29:28 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"EER2HP31VRTVYFHFYVIN5XMC4"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '111537',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '30',
+26 silly registry.get     'x-served-by': 'cache-iad2148-IAD',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1421101768.563756,VS0,VE1',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'mocha', range: '*', hasData: true }
+28 silly addNameRange versions [ 'mocha',
+28 silly addNameRange   [ '0.0.1-alpha1',
+28 silly addNameRange     '0.0.1-alpha2',
+28 silly addNameRange     '0.0.1-alpha3',
+28 silly addNameRange     '0.0.1-alpha4',
+28 silly addNameRange     '0.0.1-alpha5',
+28 silly addNameRange     '0.0.1-alpha6',
+28 silly addNameRange     '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.7',
+28 silly addNameRange     '0.0.8',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.6',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.10.1',
+28 silly addNameRange     '0.10.2',
+28 silly addNameRange     '0.11.0',
+28 silly addNameRange     '0.12.0',
+28 silly addNameRange     '0.12.1',
+28 silly addNameRange     '0.13.0',
+28 silly addNameRange     '0.14.0',
+28 silly addNameRange     '0.14.1',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.3',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.6.0',
+28 silly addNameRange     '1.7.0',
+28 silly addNameRange     '1.7.1',
+28 silly addNameRange     '1.7.2',
+28 silly addNameRange     '1.7.3',
+28 silly addNameRange     '1.7.4',
+28 silly addNameRange     '1.8.0',
+28 silly addNameRange     '1.8.1',
+28 silly addNameRange     '1.8.2',
+28 silly addNameRange     '1.9.0',
+28 silly addNameRange     '1.10.0',
+28 silly addNameRange     '1.11.0',
+28 silly addNameRange     '1.12.0',
+28 silly addNameRange     '1.12.1',
+28 silly addNameRange     '1.13.0',
+28 silly addNameRange     '1.14.0',
+28 silly addNameRange     '1.15.0',
+28 silly addNameRange     '1.15.1',
+28 silly addNameRange     '1.16.0',
+28 silly addNameRange     '1.16.1',
+28 silly addNameRange     '1.16.2',
+28 silly addNameRange     '1.17.0',
+28 silly addNameRange     '1.17.1',
+28 silly addNameRange     '1.18.0',
+28 silly addNameRange     '1.18.1',
+28 silly addNameRange     '1.18.2',
+28 silly addNameRange     '1.19.0',
+28 silly addNameRange     '1.20.0',
+28 silly addNameRange     '1.20.1',
+28 silly addNameRange     '1.21.0',
+28 silly addNameRange     '1.21.1',
+28 silly addNameRange     '1.21.2',
+28 silly addNameRange     '1.21.3',
+28 silly addNameRange     '1.21.4',
+28 silly addNameRange     '1.21.5',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '2.0.1',
+28 silly addNameRange     '2.1.0' ] ]
+29 verbose addNamed [ 'mocha', '2.1.0' ]
+30 verbose addNamed [ '2.1.0', '2.1.0' ]
+31 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+32 verbose lock mocha@2.1.0 /Users/workstation/.npm/f9a4f261-mocha-2-1-0.lock
+33 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+34 verbose lock https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz /Users/workstation/.npm/ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz',
+35 verbose addRemoteTarball   '77752fe592fb9092756827af46cd3eae1b83671c' ]
+36 info retry fetch attempt 1 at 17:29:31
+37 verbose fetch to= /var/folders/y2/7z6ztmld3x91j3yk3gp0dr5r0000gq/T/npm-9389-B9_RxqDk/registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+38 http GET https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+39 http 200 https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+40 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+41 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+42 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+43 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+44 silly lockFile b9899f31-mocha mocha@
+45 silly lockFile b9899f31-mocha mocha@
+46 silly resolved [ { name: 'mocha',
+46 silly resolved     version: '2.1.0',
+46 silly resolved     description: 'simple, flexible, fun test framework',
+46 silly resolved     keywords: [ 'mocha', 'test', 'bdd', 'tdd', 'tap' ],
+46 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+46 silly resolved     contributors:
+46 silly resolved      [ [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object] ],
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/mochajs/mocha.git' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+46 silly resolved     main: './index',
+46 silly resolved     browser: './mocha.js',
+46 silly resolved     bin: { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+46 silly resolved     engines: { node: '>= 0.8.x' },
+46 silly resolved     scripts: { test: 'make test-all' },
+46 silly resolved     dependencies:
+46 silly resolved      { commander: '2.3.0',
+46 silly resolved        debug: '2.0.0',
+46 silly resolved        diff: '1.0.8',
+46 silly resolved        'escape-string-regexp': '1.0.2',
+46 silly resolved        glob: '3.2.3',
+46 silly resolved        growl: '1.8.1',
+46 silly resolved        jade: '0.26.3',
+46 silly resolved        mkdirp: '0.5.0' },
+46 silly resolved     devDependencies: { 'coffee-script': '~1.8.0', should: '~4.0.0' },
+46 silly resolved     files:
+46 silly resolved      [ 'bin',
+46 silly resolved        'images',
+46 silly resolved        'lib',
+46 silly resolved        'index.js',
+46 silly resolved        'mocha.css',
+46 silly resolved        'mocha.js',
+46 silly resolved        'LICENSE' ],
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     bugs: { url: 'https://github.com/mochajs/mocha/issues' },
+46 silly resolved     homepage: 'https://github.com/mochajs/mocha',
+46 silly resolved     _id: 'mocha@2.1.0',
+46 silly resolved     _shasum: '77752fe592fb9092756827af46cd3eae1b83671c',
+46 silly resolved     _from: 'mocha@',
+46 silly resolved     _npmVersion: '1.4.9',
+46 silly resolved     _npmUser: { name: 'travisjeffery', email: 'tj@travisjeffery.com' },
+46 silly resolved     dist:
+46 silly resolved      { shasum: '77752fe592fb9092756827af46cd3eae1b83671c',
+46 silly resolved        tarball: 'http://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz' } ]
+47 info install mocha@2.1.0 into /usr/local/lib
+48 info installOne mocha@2.1.0
+49 verbose lib/node_modules/mocha unbuild
+50 verbose tar unpack /Users/workstation/.npm/mocha/2.1.0/package.tgz
+51 silly lockFile 746f3f6f-usr-local-lib-node-modules-mocha tar:///usr/local/lib/node_modules/mocha
+52 verbose lock tar:///usr/local/lib/node_modules/mocha /Users/workstation/.npm/746f3f6f-usr-local-lib-node-modules-mocha.lock
+53 silly lockFile 24a28eec-tion-npm-mocha-2-1-0-package-tgz tar:///Users/workstation/.npm/mocha/2.1.0/package.tgz
+54 verbose lock tar:///Users/workstation/.npm/mocha/2.1.0/package.tgz /Users/workstation/.npm/24a28eec-tion-npm-mocha-2-1-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/mocha'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/mocha']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/mocha',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/mocha',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.3.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "mocha" "--save-dev"
+60 error cwd /Users/workstation/Documents/mente/speech-message
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/mocha
+64 error fstream_path /usr/local/lib/node_modules/mocha
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/mocha'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
