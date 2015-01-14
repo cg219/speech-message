@@ -4,11 +4,11 @@ var mongoose = require("mongoose");
 
 function LoginController(router){
 	this.router = router;
-
-
 }
 
-LoginController.prototype.login = function(username, password, number, res, req) {
+LoginController.prototype.login = function(username, password, number, req, res) {
+	mongoose.connect(config.mongo);
+
 	var query = userModel.find({
 		username: username,
 		phonenumber: number
@@ -19,11 +19,12 @@ LoginController.prototype.login = function(username, password, number, res, req)
 
 	promise.addCallback(function(results){
 		mongoose.disconnect();
-		res.json(results);
+		res.status(200);
+		res.json(results).end();
 	});
 };
 
-LoginController.prototype.register = function(username, password, number, res, req) {
+LoginController.prototype.register = function(username, password, number, req, res) {
 	mongoose.connect(config.mongo);
 
 	var User = userModel;
@@ -43,18 +44,20 @@ LoginController.prototype.register = function(username, password, number, res, r
 	var promise = userLookup.exec();
 
 	promise.addCallback(function(results){
-		if(results){
+		if(results.length > 0){
 			mongoose.disconnect();
+			res.status(500);
 			res.json({
 				message: "User Exists",
 				error: true,
 				code: 1
-			});
+			}).end();
 		}
 		else{
 			newUser.save(function(err, user, amount){
 				mongoose.disconnect();
-				res.json(user);
+				res.status(200);
+				res.json(user).end();
 			})
 		}
 	});
@@ -63,11 +66,13 @@ LoginController.prototype.register = function(username, password, number, res, r
 module.exports = function(router){
 	var login = new LoginController(router);
 
-	login.router.post("/login", function(res, req){
-		login.login(req.param("username"),req.param("password"),req.param("number"), res, req);
+	login.router.post("/login", function(req, res){
+		login.login(req.param("username"), req.param("password"), req.param("phonenumber"), req, res);
 	})
 
-	login.router.post("/register", function(res, req){
-		login.register(req.param("username"),req.param("password"),req.param("number"), res, req);
+	login.router.post("/register", function(req, res){
+		login.register(req.param("username"), req.param("password"), req.param("phonenumber"), req, res);
 	})
+
+	return login.router;
 }

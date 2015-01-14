@@ -1,3 +1,3 @@
 module.exports = {
-	mongo: "mongo://localhost/speech-message"
+	mongodb: "mongo://localhost/speech-message"
 }
